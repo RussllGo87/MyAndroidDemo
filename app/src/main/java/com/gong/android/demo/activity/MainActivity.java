@@ -28,10 +28,13 @@ public class MainActivity extends Activity {
 
     public static final int REQUEST_VIDEO_CAPTURE = 3;
 
+
+
     private ImageView iv_demo;
     private VideoView view_video_demo;
     private Button btn_photo_capture;
     private Button btn_video_capture;
+    private Button btn_view_circle;
 
     String mCurrentPhotoPath;
     String mCurrentVideoPath;
@@ -63,6 +66,15 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View v) {
                 dispatchTakeVideoIntent();
+            }
+        });
+
+        btn_view_circle = (Button) findViewById(R.id.btn_view_circle);
+        btn_view_circle.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), CircleDrawableActivity.class);
+                startActivity(intent);
             }
         });
     }
