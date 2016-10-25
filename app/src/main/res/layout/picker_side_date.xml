@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/iv_date_pre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_date_pre"/>
+
+    <TextView android:id="@+id/tv_date"
+        android:layout_width="120dp"
+        android:layout_height="32dp"
+        android:gravity="center"
+        android:text="10-12"
+        android:textColor="@color/color_white"/>
+
+    <ImageView android:id="@+id/iv_date_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_date_next"/>
+
+</merge>

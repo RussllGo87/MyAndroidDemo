@@ -2,6 +2,23 @@
 <resources>
     <declare-styleable name="CircleTextView">
         <attr name="arc_stokeWidth" format="dimension"/>
-        <attr name="arc_stockColor" format="color"/>
+
+        <attr name="arc_stockStartColor" format="color"/>
+        <attr name="arc_stockEndColor" format="color"/>
+
+        <attr name="arc_title" format="string"/>
+        <attr name="arc_title_textColor" format="color"/>
+        <attr name="arc_title_textSize" format="dimension"/>
+
+        <attr name="arc_value_textColor" format="color"/>
+        <attr name="arc_value_textSize" format="dimension"/>
+
+        <attr name="arc_unit" format="string"/>
+        <attr name="arc_unit_textColor" format="color"/>
+        <attr name="arc_unit_textSize" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="VerticalTextView">
+        <attr name="ver_title" format="string"/>
     </declare-styleable>
 </resources>

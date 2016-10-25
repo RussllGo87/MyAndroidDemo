@@ -12,22 +12,150 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/tv_view_animation"/>
+        android:text="@string/tv_circle_view_animation"/>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <com.gong.android.demo.view.CircleTextView
+            android:id="@+id/tv_circle_speed"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="8dp"
+            app:arc_stockStartColor="@color/color_90da67"
+            app:arc_stockEndColor="@color/color_67da9a"
+            app:arc_stokeWidth="@dimen/stokeWidth"
+            app:arc_title="平均车速"
+            app:arc_title_textSize="@dimen/title_textSize"
+            app:arc_title_textColor="@color/color_4d606f"
+            app:arc_value_textSize="@dimen/value_textSize"
+            app:arc_unit="km/h"
+            app:arc_unit_textSize="@dimen/unit_textSize"/>
+
+        <com.gong.android.demo.view.CircleTextView
+            android:id="@+id/tv_circle_time"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="8dp"
+            app:arc_stockStartColor="@color/color_90da67"
+            app:arc_stockEndColor="@color/color_67da9a"
+            app:arc_stokeWidth="@dimen/stokeWidth"
+            app:arc_title="行驶时间"
+            app:arc_title_textSize="@dimen/title_textSize"
+            app:arc_title_textColor="@color/color_4d606f"
+            app:arc_value_textSize="@dimen/value_textSize"
+            app:arc_unit="min"
+            app:arc_unit_textSize="@dimen/unit_textSize"/>
+
+    </LinearLayout>
+
+    <!--
     <com.gong.android.demo.view.CircleTextView
         android:id="@+id/tv_circle"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        app:arc_stockColor="@color/colorAccent"
-        app:arc_stokeWidth="@dimen/stokeWidth"/>
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:arc_stockStartColor="@color/color_90da67"
+        app:arc_stockEndColor="@color/color_67da9a"
+        app:arc_stokeWidth="@dimen/stokeWidth"
+        app:arc_title="平均车速"
+        app:arc_title_textSize="@dimen/title_textSize"
+        app:arc_value_textSize="@dimen/value_textSize"
+        app:arc_unit="km/h"
+        app:arc_unit_textSize="@dimen/unit_textSize"/>
+    -->
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/tv_drawable_animation"/>
+        android:text="@string/tv_vertical_view_animation"/>
 
-    <ImageView android:id="@+id/iv_demo_circle"
-               android:layout_width="200dp"
-               android:layout_height="200dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.gong.android.demo.view.VerticalTextView
+            android:id="@+id/ver_tv_descent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            app:ver_title="急减速"/>
+
+        <com.gong.android.demo.view.VerticalTextView
+            android:id="@+id/ver_tv_ascent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            app:ver_title="急加速"/>
+
+        <com.gong.android.demo.view.VerticalTextView
+            android:id="@+id/ver_tv_brake"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            app:ver_title="急刹车"/>
+
+        <com.gong.android.demo.view.VerticalTextView
+            android:id="@+id/ver_tv_turn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            app:ver_title="急转弯"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button android:id="@+id/btn_circle_view_animate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_circle_view_animation"/>
+
+        <Button android:id="@+id/btn_vertical_view_animate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_vertical_view_animation"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button android:id="@+id/btn_circle_view_animation_set"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_circle_view_animation_set"/>
+
+        <Button android:id="@+id/btn_vertical_view_animation_set"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_vertical_view_animation_set"/>
+
+    </LinearLayout>
+
+    <com.gong.android.demo.view.DateSidePicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:background="@color/colorPrimaryDark"/>
+
 
 </LinearLayout>

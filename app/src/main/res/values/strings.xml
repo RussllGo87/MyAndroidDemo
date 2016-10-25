@@ -3,7 +3,15 @@
     <string name="title_activity_main">MainActivity</string>
     <string name="btn_photo_capture">拍照</string>
     <string name="btn_video_capture">录像</string>
+
     <string name="btn_view_circle">圆形动画</string>
-    <string name="tv_view_animation">基于View属性动画</string>
-    <string name="tv_drawable_animation">基于Drawable属性动画</string>
+    <string name="tv_circle_view_animation">CircleTextView属性动画</string>
+    <string name="tv_vertical_view_animation">VerticalTextView属性动画</string>
+
+    <string name="btn_circle_view_animation">CircleView动画</string>
+    <string name="btn_vertical_view_animation">VerticalView动画</string>
+
+    <string name="btn_circle_view_animation_set">CircleView动画集合</string>
+    <string name="btn_vertical_view_animation_set">VerticalView动画集合</string>
+
 </resources>
