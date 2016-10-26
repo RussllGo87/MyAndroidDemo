@@ -33,6 +33,8 @@
 
         <activity android:name=".activity.CircleDrawableActivity">
         </activity>
+        <activity android:name=".activity.CameraIntentActivity">
+        </activity>
     </application>
 
 </manifest>
