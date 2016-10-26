@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_white">@android:color/white</color>
+    <color name="color_67da9a">#67da9a</color>
+    <color name="color_90da67">#90da67</color>
+    <color name="color_4d606f">#4d606f</color>
+</resources>

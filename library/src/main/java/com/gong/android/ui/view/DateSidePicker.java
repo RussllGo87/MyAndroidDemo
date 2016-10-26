@@ -1,16 +1,14 @@
-package com.gong.android.demo.view;
+package com.gong.android.ui.view;
 
 import android.annotation.TargetApi;
 import android.content.Context;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-
-import com.gong.android.demo.R;
+import com.gong.android.ui.R;
 
 import java.util.Calendar;
 import java.util.Date;
@@ -27,12 +25,16 @@ public class DateSidePicker extends LinearLayout {
 
     Date date;
 
-    interface OnDatePikerListener {
+    public interface OnDatePickListener {
         void onPreClick(Date date);
         void onNextClick(Date date);
     }
 
-    OnDatePikerListener mListener;
+    OnDatePickListener mListener;
+
+    public void setOnDatePickListener(OnDatePickListener mListener) {
+        this.mListener = mListener;
+    }
 
     public DateSidePicker(Context context) {
         this(context, null);
@@ -42,6 +44,7 @@ public class DateSidePicker extends LinearLayout {
         this(context, attrs, 0);
     }
 
+    @TargetApi(11)
     public DateSidePicker(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
 
@@ -74,7 +77,7 @@ public class DateSidePicker extends LinearLayout {
         super.onFinishInflate();
 
         iv_date_pre = (ImageView) findViewById(R.id.iv_date_pre);
-        iv_date_pre.setOnClickListener(new View.OnClickListener() {
+        iv_date_pre.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
                 preDay();
@@ -86,7 +89,7 @@ public class DateSidePicker extends LinearLayout {
         tv_date = (TextView) findViewById(R.id.tv_date);
         tv_date.setText(showDate(date));
         iv_date_next = (ImageView) findViewById(R.id.iv_date_next);
-        iv_date_next.setOnClickListener(new View.OnClickListener() {
+        iv_date_next.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
                 nextDay();

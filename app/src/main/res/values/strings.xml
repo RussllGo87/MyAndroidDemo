@@ -13,5 +13,6 @@
 
     <string name="btn_circle_view_animation_set">CircleView动画集合</string>
     <string name="btn_vertical_view_animation_set">VerticalView动画集合</string>
+    <string name="tv_picker_side_date">DateSidePicker使用</string>
 
 </resources>

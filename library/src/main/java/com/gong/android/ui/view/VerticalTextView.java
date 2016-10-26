@@ -1,4 +1,4 @@
-package com.gong.android.demo.view;
+package com.gong.android.ui.view;
 
 import android.annotation.TargetApi;
 import android.content.Context;
@@ -9,7 +9,7 @@ import android.view.LayoutInflater;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.gong.android.demo.R;
+import com.gong.android.ui.R;
 
 /**
  * Created by gongguopei@che-mi.net on 2016/10/24.
@@ -33,6 +33,7 @@ public class VerticalTextView extends LinearLayout {
         this(context, attrs, 0);
     }
 
+    @TargetApi(11)
     public VerticalTextView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
 

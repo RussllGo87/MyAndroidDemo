@@ -1,1 +1,1 @@
-include ':app', ':nsdchat', ':camera'
+include ':app', ':nsdchat', ':camera', ':library'

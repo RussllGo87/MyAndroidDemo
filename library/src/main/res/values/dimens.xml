@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="stokeWidth">8dp</dimen>
+    <dimen name="title_textSize">18sp</dimen>
+    <dimen name="value_textSize">36sp</dimen>
+    <dimen name="unit_textSize">16sp</dimen>
+
+    <dimen name="ver_title_textSize">16sp</dimen>
+    <dimen name="ver_value_textSize">36sp</dimen>
+</resources>
