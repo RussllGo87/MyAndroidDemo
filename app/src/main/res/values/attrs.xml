@@ -10,6 +10,7 @@
         <attr name="arc_title_textColor" format="color"/>
         <attr name="arc_title_textSize" format="dimension"/>
 
+        <attr name="arc_maxValue" format="integer"/>
         <attr name="arc_value_textColor" format="color"/>
         <attr name="arc_value_textSize" format="dimension"/>
 

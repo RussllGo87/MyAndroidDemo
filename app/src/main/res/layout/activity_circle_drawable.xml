@@ -31,6 +31,7 @@
             app:arc_title="平均车速"
             app:arc_title_textSize="@dimen/title_textSize"
             app:arc_title_textColor="@color/color_4d606f"
+            app:arc_maxValue="200"
             app:arc_value_textSize="@dimen/value_textSize"
             app:arc_unit="km/h"
             app:arc_unit_textSize="@dimen/unit_textSize"/>
@@ -46,6 +47,7 @@
             app:arc_title="行驶时间"
             app:arc_title_textSize="@dimen/title_textSize"
             app:arc_title_textColor="@color/color_4d606f"
+            app:arc_maxValue="480"
             app:arc_value_textSize="@dimen/value_textSize"
             app:arc_unit="min"
             app:arc_unit_textSize="@dimen/unit_textSize"/>
