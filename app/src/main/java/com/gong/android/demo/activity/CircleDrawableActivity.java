@@ -89,6 +89,8 @@ public class CircleDrawableActivity extends AppCompatActivity {
                 animateVerticalView(new int[]{50, 80, 40, 60}, 1500);
             }
         });
+
+        // 添加注释
     }
 
     private void animateCircleView(CircleTextView view, int progress, long duration) {
