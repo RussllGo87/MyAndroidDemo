@@ -23,6 +23,7 @@ public class ExampleInstrumentedTest {
 
         assertEquals("com.gong.android.ui.test", appContext.getPackageName());
 
-        //
+        //jolfjljaf
+        //jolfjljaf
     }
 }
