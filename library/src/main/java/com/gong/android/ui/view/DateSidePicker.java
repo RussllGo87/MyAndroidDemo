@@ -132,6 +132,8 @@ public class DateSidePicker extends LinearLayout {
         } else {
             iv_date_next.setVisibility(View.INVISIBLE);
         }
+
+        //
     }
 
     public Date getDate() {
