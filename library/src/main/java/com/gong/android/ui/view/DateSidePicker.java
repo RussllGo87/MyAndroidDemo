@@ -133,7 +133,7 @@ public class DateSidePicker extends LinearLayout {
             iv_date_next.setVisibility(View.INVISIBLE);
         }
 
-        //
+        //fakljkle
     }
 
     public Date getDate() {

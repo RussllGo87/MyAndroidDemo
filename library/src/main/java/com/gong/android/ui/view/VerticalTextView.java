@@ -51,7 +51,7 @@ public class VerticalTextView extends LinearLayout {
 
         initializeViews(context);
 
-        //
+        //afklwjeklwj
     }
 
     @TargetApi(21)
